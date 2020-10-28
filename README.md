@@ -1,2 +1,5 @@
 # dzdp
-this is dazhongdianping spider project
+这是一个对大众点评评论分析的Spark项目
+
+# 环境搭建.md
+是该项目中环境配置的说明
