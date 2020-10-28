@@ -20,11 +20,11 @@ public class SparkMysql {
             .config("spark.default.parallelism", 100)
             .config("spark.sql.shuffle.partitions", 100)
             .config("spark.driver.maxResultSize", "500m")
+//            .config("yarn.resourcemanager.address", "gxq:8088")
             .getOrCreate();
     private static JavaSparkContext sc = new JavaSparkContext(spark.sparkContext());
 
     public static void main(String[] args) {
-
         SQLContext sqlContext = new SQLContext(sc);
         //读取mysql数据
         readMySQL(sqlContext);
